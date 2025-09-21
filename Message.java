@@ -5,6 +5,8 @@ public abstract class Message {
     public Message(MessageSender messageSender) {
         this.messageSender = messageSender;
     }
-
+    public void show(){
+        System.out.println("Message");
+    }
     public abstract void send();
 }
